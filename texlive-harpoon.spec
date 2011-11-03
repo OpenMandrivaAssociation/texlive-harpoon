@@ -1,3 +1,9 @@
+# revision 21327
+# category Package
+# catalog-ctan /macros/latex/contrib/harpoon
+# catalog-date 2008-09-24 00:41:06 +0200
+# catalog-license pd
+# catalog-version 1.0
 Name:		texlive-harpoon
 Version:	1.0
 Release:	1
@@ -40,6 +46,7 @@ commands, so that they have the look of accent commands.
 %{_texmfdistdir}/tex/latex/harpoon/harpoon.sty
 %doc %{_texmfdistdir}/doc/latex/harpoon/harpoon.pdf
 %doc %{_texmfdistdir}/doc/latex/harpoon/harpoon.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,3 +57,5 @@ commands, so that they have the look of accent commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
