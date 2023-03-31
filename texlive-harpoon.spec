@@ -1,6 +1,6 @@
 Name:		texlive-harpoon
 Version:	21327
-Release:	1
+Release:	2
 Summary:	Extra harpoons, using the graphics package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/harpoon
